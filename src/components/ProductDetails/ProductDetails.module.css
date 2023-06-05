@@ -1,0 +1,222 @@
+.productDetails{
+    display: flex;
+    padding: 0 3rem;
+    margin-top: 3.5rem;
+    gap: 10rem;
+    margin-bottom: 5rem;
+}
+
+.productDetails .productImageAndSlides .productImage .prevAndNextButtons{
+    display: none;
+    margin-top: -200px;
+    margin-bottom: 150px;
+    padding: 0 0.5rem;
+    justify-content: space-between;
+}
+
+.productDetails .productImageAndSlides .productImage button img{
+    max-width: 100%;
+    background-color: var(--white);
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 999px;
+}
+
+.productDetails .productImageAndSlides .productImage .previousButton,
+.productDetails .productImageAndSlides .productImage .nextButton{
+    background-color: transparent;
+    border: none;
+}
+
+.productDetails .productImageAndSlides .productImage img{
+    width: 400px;
+    border-radius: 15px;
+}
+
+.productDetails .productImageAndSlides .productThumbnails{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.productDetails .productImageAndSlides .productThumbnails img{
+    width: 90px;
+    border-radius: 15px;
+}
+
+.productInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.productDetails .productInfo .companyTitle{
+    color: var(--orange);
+    font-size: 0.725rem;
+    margin-bottom: 1.5rem;
+}
+
+.productDetails .productInfo .productTitle{
+    font-size: 2.5rem;
+}
+
+.productDetails .productInfo .productDescription{
+    color: var(--dark-grayish-blue);
+    margin-top: 1.5rem;
+}
+
+.productDetails .productInfo .priceBox{
+    margin-top: 1.5rem;
+}
+
+.productDetails .productInfo .priceBox .priceAndPercentage{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.productDetails .productInfo .priceBox .priceAndPercentage span{
+    background-color: var(--pale-orange);
+    color: var(--orange);
+    font-weight: bold;
+    padding: 0.1rem 0.3rem;
+    border-radius: 5px;
+}
+
+.productDetails .productInfo .priceBox b{
+    font-size: 1.5rem;
+}
+
+.productDetails .productInfo .priceBox .oldPrice{
+    color: var(--grayish-blue);
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.productDetails .quantityAndAddToCart{
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.productDetails .quantityAndAddToCart .chooseQuantity{
+    padding: 0.5rem 1rem;
+    background-color: var(--light-grayish-blue);
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.productDetails .quantityAndAddToCart .chooseQuantity input{
+    width: 3rem;
+    padding: 0.5rem;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+
+}
+
+.productDetails .quantityAndAddToCart .chooseQuantity button{
+    padding: 0.5rem;
+    background-color: transparent;
+    border: none;
+    line-height: 0;
+    cursor: pointer;
+}
+
+.productDetails .quantityAndAddToCart .addToCartButtonBox{
+    width: 100%;
+}
+
+.productDetails .quantityAndAddToCart .addToCartButton{
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.875rem;
+    width: 100%;
+    -webkit-box-shadow: 0px 16px 26px -13px rgba(255,132,0,0.59);
+    -moz-box-shadow: 0px 16px 26px -13px rgba(255,132,0,0.59);
+    box-shadow: 0px 16px 26px -13px rgba(255,132,0,0.59);
+}
+
+@media (max-width: 940px){
+    .productDetails{
+        gap: 5rem;
+    }
+}
+
+@media (max-width: 856px){
+    .productDetails{
+        flex-direction: column;
+    }
+
+    .productDetails .productImageAndSlides .productImage{
+        text-align: center;
+    }
+
+    .productDetails .productImageAndSlides .productThumbnails img{
+        justify-content: space-around;
+    }
+
+    .productDetails .productImageAndSlides .productImage{
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 730px){
+    .productDetails .productImageAndSlides .productThumbnails{
+        display: none;
+    }
+
+    .productDetails .productImageAndSlides .productImage .prevAndNextButtons{
+        display: flex;
+    }
+
+    .productDetails .productInfo .priceBox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .productDetails .quantityAndAddToCart{
+        flex-direction: column;
+    }
+
+    .productDetails .quantityAndAddToCart .chooseQuantity{
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 515px){
+    .productDetails{
+        padding: 0;
+        margin-top: 0;
+        gap: 1rem;
+    }
+
+    .productInfo{
+        padding: 0 2rem;
+    }
+
+    .productDetails .productInfo .productTitle{
+        font-size: 2rem;
+    }
+
+    .productDetails .productImageAndSlides .productImage img{
+        border-radius: 0;
+    }
+
+    
+}

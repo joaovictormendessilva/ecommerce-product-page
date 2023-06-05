@@ -3,4 +3,6 @@
 
     width: 67.5rem;
     max-width: 100%;
+
+    display: flex;
 }
