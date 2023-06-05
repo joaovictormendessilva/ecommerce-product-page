@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+    border-bottom: solid 1px #ccc;
+    align-items: center;
+}
+
+.header .logoAndMainMenu{
+    display: flex;
+    gap: 3rem;
+}
+
+.header .mainMenu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.header .mainMenu li{
+    color: var(--dark-grayish-blue);
+}
+
+.header .cartButtonAndAvatar{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header .cartButtonAndAvatar .avatar{
+    width: 3rem;
+    line-height: 0;
+}
