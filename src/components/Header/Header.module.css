@@ -50,10 +50,17 @@
     gap: 2rem;
 }
 
-.header .cartButtonAndAvatar .cartButtonAndBasket{
-    position: relative;
-    display: flex;
-    justify-content: center;
+
+.header .cartButtonAndAvatar .cartButtonAndBasket .quantityBadge{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: var(--orange);
+    color: var(--white);
+    border-radius: 999px;
+    padding: 0.1rem 0.5rem;
+    font-size: 10px;
+    font-weight: bold;
 }
 
 .header .cartButtonAndAvatar .cartButton{
@@ -61,33 +68,17 @@
     border: none;
     outline: none;
     cursor: pointer;
+    position: relative;
 }
 
-.header .cartButtonAndAvatar .basket{
-    display: none;
-    position: absolute;
-    width: 220px;
-    height: 150px;
-    top: 40px;
-    background-color: var(--white);
-    border-radius: 8px;
-
-    -webkit-box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.18);
-    -moz-box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.18);
-    box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.18);
-}
-
-.header .cartButtonAndAvatar .basket h4{
-    font-size: 0.875rem !important;
-    border-bottom: solid 1px #ccc;
-    padding: 1rem 0.875rem;
-}
 
 .header .cartButtonAndAvatar .avatar{
     width: 3rem;
     line-height: 0;
     cursor: pointer;
 }
+
+
 
 @media (max-width: 730px){
     .header{

@@ -1,0 +1,70 @@
+.basket{
+    display: block;
+    position: absolute;
+    width: 330px;
+    right: 4%;
+    top: 12%;
+    background-color: var(--white);
+    border-radius: 8px;
+
+    -webkit-box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.18);
+    -moz-box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.18);
+    box-shadow: 0px 12px 16px 0px rgba(0,0,0,0.18);
+}
+
+.basket .cartTitle{
+    font-size: 0.875rem !important;
+    border-bottom: solid 1px #ccc;
+    padding: 1rem 0.875rem;
+}
+
+.basket .productThumbnail img{
+    width: 44px;
+    border-radius: 8px;
+}
+
+.basket .productsInCart{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+    padding: 1rem 0.875rem;
+    color: var(--dark-grayish-blue);
+}
+
+.basket .productsInCart b{
+    color: black;
+}
+
+.basket .priceTotal{
+    line-height: 1.2rem;
+}
+
+.basket .trashButtonCart button{
+    background-color: transparent;
+    line-height: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.basket .emptyBasket{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    color: var(--dark-grayish-blue);
+}
+
+@media (max-width: 500px){
+    .basket{
+        position: fixed;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .basket .emptyBasket{
+        height: 150px;
+    }
+}
