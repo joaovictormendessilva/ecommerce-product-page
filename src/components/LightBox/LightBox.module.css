@@ -30,7 +30,7 @@
 }
 
 .lightBox .lightBoxContent .productImageAndSlides .productImage .prevAndNextButtons{
-    display: none;
+    display: flex;
     margin-top: -200px;
     margin-bottom: 150px;
     padding: 0 0.5rem;
