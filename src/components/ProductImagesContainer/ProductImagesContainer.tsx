@@ -14,12 +14,17 @@ import NextIcon from '../../assets/img/icon-next.svg';
 import PreviousIcon from '../../assets/img/icon-previous.svg';
 
 // React
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
+
+// Context API
+import { ContextLightBox } from '../../App';
 
 export function ProductImagesContainer() {
 
     const [featuredImage, setFeaturedImage] = useState<string>(ProductImage1)
     const [count, setCount] = useState<number>(1)
+
+    const contextLightBox = useContext(ContextLightBox);
 
     const handleNextImage = () => {
         count <= 3 ? setCount((prev) => prev + 1) : setCount(1);
@@ -66,7 +71,7 @@ export function ProductImagesContainer() {
     return (
         <div className={styles.productImageAndSlides}>
             <div className={styles.productImage}>
-                <img id='featuredImage' src={featuredImage} alt="Imagem de destaque do produto" />
+                <img onClick={() => contextLightBox?.setActiveLightBox(true)} id='featuredImage' src={featuredImage} alt="Imagem de destaque do produto" />
                 <div className={styles.prevAndNextButtons}>
                     <button className={styles.previousButton} onClick={handlePrevImage}>
                         <img src={PreviousIcon} alt="Ícone de voltar imagem" />

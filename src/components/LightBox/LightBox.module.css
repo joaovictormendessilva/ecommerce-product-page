@@ -1,0 +1,105 @@
+.lightBox{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgb(0 0 0 / 88%);
+}
+
+.lightBox .lightBoxContent{
+    width: 400px;
+    margin: 5% auto;
+}
+
+.lightBox .lightBoxContent .lightBoxCloseButton{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.lightBox .lightBoxContent .lightBoxCloseButton button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.lightBox .lightBoxContent .lightBoxCloseButton button img{
+    width: 24px;
+}
+
+.lightBox .lightBoxContent .productImageAndSlides .productImage .prevAndNextButtons{
+    display: none;
+    margin-top: -200px;
+    margin-bottom: 150px;
+    padding: 0 0.5rem;
+    justify-content: space-between;
+}
+
+.lightBox .lightBoxContent .productImageAndSlides .productImage button img{
+    max-width: 100%;
+    background-color: var(--white);
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    border-radius: 999px;
+}
+
+.lightBox .lightBoxContent .productImageAndSlides .productImage .previousButton,
+.lightBox .lightBoxContent .productImageAndSlides .productImage .nextButton{
+    background-color: transparent;
+    border: none;
+}
+
+.lightBox .lightBoxContent .productImageAndSlides .productImage img{
+    width: 400px;
+    border-radius: 15px;
+}
+
+.lightBox .lightBoxContent .productImageAndSlides .productThumbnails{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.lightBox .lightBoxContent .productImageAndSlides .productThumbnails img{
+    width: 90px;
+    border-radius: 15px;
+}
+
+@media (max-width: 856px){
+
+    .lightBox .lightBoxContent .productImageAndSlides .productImage{
+        text-align: center;
+    }
+
+    .lightBox .lightBoxContent .productImageAndSlides .productThumbnails img{
+        justify-content: space-around;
+    }
+
+    .lightBox .lightBoxContent .productImageAndSlides .productImage{
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+    }
+}
+
+@media (max-width: 730px){
+    .lightBox .lightBoxContent .productImageAndSlides .productThumbnails{
+        display: none;
+    }
+
+    .lightBox .lightBoxContent .productImageAndSlides .productImage .prevAndNextButtons{
+        display: flex;
+    }
+}
+
+@media (max-width: 515px){
+
+    .lightBox .lightBoxContent .productImageAndSlides .productImage img{
+        border-radius: 0;
+    }
+
+    
+}
