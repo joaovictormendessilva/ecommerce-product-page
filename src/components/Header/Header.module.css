@@ -79,6 +79,11 @@
     cursor: pointer;
 }
 
+.header .cartButtonAndAvatar .avatar:active{
+    border: solid 2px var(--orange);
+    border-radius: 999px;
+}
+
 
 
 @media (max-width: 730px){

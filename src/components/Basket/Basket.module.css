@@ -56,6 +56,21 @@
     color: var(--dark-grayish-blue);
 }
 
+.basket .checkoutButton{
+    padding: 0 0.875rem 1rem;
+}
+
+.basket .checkoutButton button{
+    padding: 1rem 3rem;
+    border-radius: 8px;
+    border: none;
+    background-color: var(--orange);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+}
+
 @media (max-width: 500px){
     .basket{
         position: fixed;

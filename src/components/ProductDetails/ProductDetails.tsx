@@ -63,6 +63,9 @@ export function ProductDetails() {
         }
     }, [cartContext?.cart.quantity])
 
+    // Empty quantity
+    const emptyField = inputQuantity === 0
+
 
     return (
         <main className={styles.productDetails}>
@@ -106,7 +109,7 @@ export function ProductDetails() {
                         </button>
                     </div>
                     <div className={styles.addToCartButtonBox}>
-                        <button onClick={handleAddToCart} className={styles.addToCartButton}>
+                        <button onClick={handleAddToCart} className={styles.addToCartButton} disabled={emptyField}>
                             <img src={CartIcon} alt="Ícone de carrinho para adicionar produto no carrinho" />
                             Add to cart
                         </button>

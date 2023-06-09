@@ -26,6 +26,7 @@
     font-size: 1.5rem;
     color: var(--dark-grayish-blue);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .mobileSideMenu .sideMenuContent ul{

@@ -48,6 +48,7 @@
 
 .lightBox .lightBoxContent .productImageAndSlides .productImage .previousButton,
 .lightBox .lightBoxContent .productImageAndSlides .productImage .nextButton{
+    cursor: pointer;
     background-color: transparent;
     border: none;
 }

@@ -29,20 +29,27 @@ export function Basket(){
             <h4 className={styles.cartTitle}>Cart</h4>
 
             {cartContext?.cart.name !== "" ? (
-                <div className={styles.productsInCart}>
-                <div className={styles.productThumbnail}>
-                    <img src={ProductThumbnail} alt="Miniatura do produto no carrinho" />
-                </div>
-                <div>
-                    <p>{cartContext?.cart.name}</p>
-                    <span className={styles.priceTotal}>${cartContext?.cart.price.toFixed(2)} x {cartContext?.cart.quantity} <b>{ cartContext?.cart.total && cartContext?.cart.total.toFixed(2)}</b></span>
-                </div>
-                <div className={styles.trashButtonCart}>
-                    <button onClick={handleCartPorductRemover}>
-                        <img src={TrashIcon} alt="Ícone de lixeira para remove produto" />
-                    </button>
-                </div>
-            </div>
+                <>
+                    <div className={styles.productsInCart}>
+                        <div className={styles.productThumbnail}>
+                            <img src={ProductThumbnail} alt="Miniatura do produto no carrinho" />
+                        </div>
+                        <div>
+                            <p>{cartContext?.cart.name}</p>
+                            <span className={styles.priceTotal}>${cartContext?.cart.price.toFixed(2)} x {cartContext?.cart.quantity} <b>{ cartContext?.cart.total && cartContext?.cart.total.toFixed(2)}</b></span>
+                        </div>
+                        <div className={styles.trashButtonCart}>
+                            <button onClick={handleCartPorductRemover}>
+                                <img src={TrashIcon} alt="Ícone de lixeira para remove produto" />
+                            </button>
+                        </div>
+                    </div>
+                    <div className={styles.checkoutButton}>
+                        <button>
+                            Checkout
+                        </button>
+                    </div>
+                </>
             ) : (
             <div className={styles.emptyBasket}>
                 <h4>Your cart is empty.</h4>
