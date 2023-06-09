@@ -32,7 +32,10 @@ export function LightBox() {
     }
 
     useEffect(() => {
-        setFeaturedImage(`/src/assets/image-product-${count}.jpg`)
+        count === 1 && setFeaturedImage(ProductImage1)
+        count === 2 && setFeaturedImage(ProductImage2)
+        count === 3 && setFeaturedImage(ProductImage3)
+        count === 4 && setFeaturedImage(ProductImage4)
     }, [count])
 
 
