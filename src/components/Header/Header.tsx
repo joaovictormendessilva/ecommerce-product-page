@@ -15,12 +15,15 @@ import { Basket } from '../Basket/Basket';
 
 // Context API
 import { CartContext } from '../../pages/Home/Home';
+import { Menu } from '../Menu/Menu';
+import { ContextMobileSideMenu } from '../../App';
 
 export function Header() {
 
     const [showBasket, setShowBasket] = useState<boolean>(false);
 
     const cartContext = useContext(CartContext);
+    const contextMobileSideMenu = useContext(ContextMobileSideMenu);
 
     return (
         <header className={styles.header}>
@@ -31,13 +34,9 @@ export function Header() {
 
                 <div>
                     <ul className={styles.mainMenu}>
-                        <li><a href="#">Collections</a></li>
-                        <li><a href="#">Men</a></li>
-                        <li><a href="#">Women</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <Menu />
                     </ul>
-                    <button className={styles.mobileMenu}>
+                    <button onClick={() => contextMobileSideMenu?.setActiveMobileSideMenu(true)} className={styles.mobileMenu}>
                         <img src={MenuIcon} alt="Ícone menu mobile" />
                     </button>
                 </div>

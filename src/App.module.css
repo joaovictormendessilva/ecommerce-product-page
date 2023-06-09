@@ -5,4 +5,5 @@
     max-width: 100%;
 
     display: flex;
+    transition: 2s;
 }

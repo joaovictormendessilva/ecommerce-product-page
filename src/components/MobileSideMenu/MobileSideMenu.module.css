@@ -1,0 +1,44 @@
+.mobileSideMenu{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: rgb(0 0 0 / 88%);
+}
+
+.mobileSideMenu .sideMenuContent{
+    width: 65%;
+    height: 100%;
+    padding: 1rem 0 0 1.5rem;
+    background-color: var(--white);
+}
+
+.mobileSideMenu .sideMenuContent .closeButton{
+    margin-bottom: 3rem;
+}
+
+.mobileSideMenu .sideMenuContent .closeButton button{
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--dark-grayish-blue);
+    font-weight: bold;
+}
+
+.mobileSideMenu .sideMenuContent ul{
+    list-style: none;
+}
+
+.mobileSideMenu .sideMenuContent ul li{
+    margin-bottom: 1rem;
+}
+
+.mobileSideMenu .sideMenuContent ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 900;
+}
