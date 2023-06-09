@@ -2,16 +2,16 @@
 import styles from './ProductImagesContainer.module.css'
 
 // Images
-import ProductImage1 from '../../assets/img/image-product-1.jpg';
-import ProductThumbnail1 from '../../assets/img/image-product-1-thumbnail.jpg';
-import ProductImage2 from '../../assets/img/image-product-2.jpg'
-import ProductThumbnail2 from '../../assets/img/image-product-2-thumbnail.jpg';
-import ProductImage3 from '../../assets/img/image-product-3.jpg'
-import ProductThumbnail3 from '../../assets/img/image-product-3-thumbnail.jpg';
-import ProductImage4 from '../../assets/img/image-product-4.jpg'
-import ProductThumbnail4 from '../../assets/img/image-product-4-thumbnail.jpg';
-import NextIcon from '../../assets/img/icon-next.svg';
-import PreviousIcon from '../../assets/img/icon-previous.svg';
+import ProductImage1 from '../../assets/image-product-1.jpg';
+import ProductThumbnail1 from '../../assets/image-product-1-thumbnail.jpg';
+import ProductImage2 from '../../assets/image-product-2.jpg'
+import ProductThumbnail2 from '../../assets/image-product-2-thumbnail.jpg';
+import ProductImage3 from '../../assets/image-product-3.jpg'
+import ProductThumbnail3 from '../../assets/image-product-3-thumbnail.jpg';
+import ProductImage4 from '../../assets/image-product-4.jpg'
+import ProductThumbnail4 from '../../assets/image-product-4-thumbnail.jpg';
+import NextIcon from '../../assets/icon-next.svg';
+import PreviousIcon from '../../assets/icon-previous.svg';
 
 // React
 import { useState, useEffect, useContext } from 'react'
@@ -35,7 +35,7 @@ export function ProductImagesContainer() {
     }
 
     useEffect(() => {
-        setFeaturedImage(`/src/assets/img/image-product-${count}.jpg`)
+        setFeaturedImage(`/src/assets/image-product-${count}.jpg`)
     }, [count])
 
 

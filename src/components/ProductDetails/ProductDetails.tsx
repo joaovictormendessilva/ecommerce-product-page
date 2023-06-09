@@ -2,9 +2,9 @@
 import styles from './ProductDetails.module.css';
 
 // Images
-import MinusIcon from '../../assets/img/icon-minus.svg';
-import PlusIcon from '../../assets/img/icon-plus.svg';
-import CartIcon from '../../assets/img/icon-cart-button.svg'
+import MinusIcon from '../../assets/icon-minus.svg';
+import PlusIcon from '../../assets/icon-plus.svg';
+import CartIcon from '../../assets/icon-cart-button.svg'
 
 // React
 import { ChangeEvent, useContext, useEffect, useState } from 'react';

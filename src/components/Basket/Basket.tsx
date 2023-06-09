@@ -2,8 +2,8 @@
 import styles from './Basket.module.css'
 
 // Images
-import TrashIcon from '../../assets/img/icon-delete.svg';
-import ProductThumbnail from '../../assets/img/image-product-1-thumbnail.jpg';
+import TrashIcon from '../../assets/icon-delete.svg';
+import ProductThumbnail from '../../assets/image-product-1-thumbnail.jpg';
 
 // React
 import { useContext } from 'react'

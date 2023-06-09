@@ -2,10 +2,10 @@
 import styles from './Header.module.css';
 
 // Images
-import Logo from '../../assets/img/logo.svg';
-import CartIcon from '../../assets/img/icon-cart.svg';
-import Avatar from '../../assets/img/image-avatar.png'
-import MenuIcon from '../../assets/img/icon-menu.svg';
+import Logo from '../../assets/logo.svg';
+import CartIcon from '../../assets/icon-cart.svg';
+import Avatar from '../../assets/image-avatar.png'
+import MenuIcon from '../../assets/icon-menu.svg';
 
 // React
 import { useContext, useState } from 'react';
