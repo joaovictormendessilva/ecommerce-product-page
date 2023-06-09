@@ -1,5 +1,7 @@
+// CSS
 import styles from './ProductImagesContainer.module.css'
 
+// Images
 import ProductImage1 from '../../assets/img/image-product-1.jpg';
 import ProductThumbnail1 from '../../assets/img/image-product-1-thumbnail.jpg';
 import ProductImage2 from '../../assets/img/image-product-2.jpg'
@@ -17,6 +19,20 @@ import { useState, useEffect } from 'react'
 export function ProductImagesContainer() {
 
     const [featuredImage, setFeaturedImage] = useState<string>(ProductImage1)
+    const [count, setCount] = useState<number>(1)
+
+    const handleNextImage = () => {
+        count <= 3 ? setCount((prev) => prev + 1) : setCount(1);
+    }
+    const handlePrevImage = () => {
+        count > 1 ? setCount((prev) => prev - 1) : setCount(4);
+        console.log(count);
+    }
+
+    useEffect(() => {
+        setFeaturedImage(`/src/assets/img/image-product-${count}.jpg`)
+    }, [count])
+
 
     useEffect(() => {
 
@@ -33,12 +49,16 @@ export function ProductImagesContainer() {
 
         if (img.src.includes(ProductImage1)) {
             imgSlide.classList.add("activeImage")
+            setCount(1)
         }else if(img.src.includes(ProductImage2)){
             imgSlide2.classList.add("activeImage")
+            setCount(2)
         }else if(img.src.includes(ProductImage3)){
             imgSlide3.classList.add("activeImage")
+            setCount(3)
         }else if(img.src.includes(ProductImage4)){
             imgSlide4.classList.add("activeImage")
+            setCount(4)
         }
 
     }, [featuredImage])
@@ -48,10 +68,10 @@ export function ProductImagesContainer() {
             <div className={styles.productImage}>
                 <img id='featuredImage' src={featuredImage} alt="Imagem de destaque do produto" />
                 <div className={styles.prevAndNextButtons}>
-                    <button className={styles.previousButton}>
+                    <button className={styles.previousButton} onClick={handlePrevImage}>
                         <img src={PreviousIcon} alt="Ícone de voltar imagem" />
                     </button>
-                    <button className={styles.nextButton}>
+                    <button className={styles.nextButton} onClick={handleNextImage}>
                         <img src={NextIcon} alt="Ícone de voltar imagem" />
                     </button>
                 </div>
