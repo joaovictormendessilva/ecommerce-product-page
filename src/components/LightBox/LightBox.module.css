@@ -10,7 +10,7 @@
 }
 
 .lightBox .lightBoxContent{
-    width: 400px;
+    width: 25rem;
     margin: 5% auto;
 }
 
@@ -26,13 +26,13 @@
 }
 
 .lightBox .lightBoxContent .lightBoxCloseButton button img{
-    width: 24px;
+    width: 1.5rem;
 }
 
 .lightBox .lightBoxContent .productImageAndSlides .productImage .prevAndNextButtons{
     display: flex;
-    margin-top: -200px;
-    margin-bottom: 150px;
+    margin-top: -12.5rem;
+    margin-bottom: 9.375rem;
     padding: 0 0.5rem;
     justify-content: space-between;
 }
@@ -40,9 +40,9 @@
 .lightBox .lightBoxContent .productImageAndSlides .productImage button img{
     max-width: 100%;
     background-color: var(--white);
-    padding: 10px;
-    height: 50px;
-    width: 50px;
+    padding: 0.625rem;
+    height: 3.125rem;
+    width: 3.125rem;
     border-radius: 999px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .lightBox .lightBoxContent .productImageAndSlides .productImage img{
-    width: 400px;
+    width: 25rem;
     border-radius: 15px;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .lightBox .lightBoxContent .productImageAndSlides .productThumbnails img{
-    width: 90px;
+    width: 5.625rem;
     border-radius: 15px;
 }
 
@@ -81,7 +81,7 @@
 
     .lightBox .lightBoxContent .productImageAndSlides .productImage{
         width: 100%;
-        max-width: 400px;
+        max-width: 25rem;
         margin: auto;
     }
 }

@@ -1,7 +1,7 @@
 .basket{
     display: block;
     position: absolute;
-    width: 330px;
+    width: 20.625rem;
     right: 4%;
     top: 12%;
     background-color: var(--white);
@@ -19,12 +19,12 @@
 }
 
 .basket .productThumbnail img{
-    width: 44px;
+    width: 2.75rem;
     border-radius: 8px;
 }
 
 .basket .productsInCart{
-    height: 100px;
+    height: 6.25rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,7 +52,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 6.25rem;
     color: var(--dark-grayish-blue);
 }
 
@@ -80,6 +80,6 @@
     }
 
     .basket .emptyBasket{
-        height: 150px;
+        height: 9.375rem;
     }
 }
