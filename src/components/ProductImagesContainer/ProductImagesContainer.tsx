@@ -35,7 +35,8 @@ export function ProductImagesContainer() {
     }
 
     useEffect(() => {
-        setFeaturedImage(`/src/assets/image-product-${count}.jpg`)
+        // setFeaturedImage(`/src/assets/image-product-${count}.jpg`)
+        setFeaturedImage(`/assets/image-product-${count}.jpg`)
     }, [count])
 
 
