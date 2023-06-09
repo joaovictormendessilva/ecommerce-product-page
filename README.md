@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-ecommerce-product-page-using-react-typescript-3sqEcrcwOV)
-- Live Site URL: [Newsletter Live Site](https://ecommerce-product-page-h6edu0rjo-joaovictormendessilva.vercel.app/)
+- Live Site URL: [Live Site](https://ecommerce-product-page-h6edu0rjo-joaovictormendessilva.vercel.app/)
 
 ## My process
 
